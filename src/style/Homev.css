@@ -1,0 +1,1189 @@
+header {
+  position: fixed;
+  top: 0;
+  padding: 1rem;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border);
+  background-color: var(--bg);
+}
+.headerName {
+  white-space: nowrap;
+}
+.navBox {
+  position: relative;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+.navp {
+  padding: 10px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--color);
+  transition: 1s;
+  text-decoration: none;
+}
+.navp:hover {
+  color: var(--primary-color);
+  transform: translateY(-5px);
+}
+.headerBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.headerBoxp {
+  padding: 10px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+  color: var(--color);
+}
+.headerBoxp:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+.heroSection {
+  position: relative;
+  padding: 1rem;
+  padding-top: 75px;
+  min-height: 100vh;
+  display: flex;
+  gap: 10px;
+}
+.heroContainera {
+  position: relative;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+}
+.herofirsttil {
+  position: relative;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: var(--secondary-color);
+  color: var(--color);
+  overflow: hidden;
+}
+.herofirsttil::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    transparent,
+    var(--primary-color)
+  );
+  background-size: 200% 100%;
+  background-position: 0 0;
+  pointer-events: none;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 1;
+  animation: jj 4s linear infinite;
+}
+@keyframes jj {
+  to {
+    background-position: 200% 0%;
+  }
+}
+
+.heroTitle {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+.heroDescription {
+  width: 70%;
+  line-height: 23px;
+}
+.heroBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ctaButa {
+  padding: 10px 10px;
+  background-color: var(--primary-color);
+  font-size: 16px;
+  border: none;
+  color: white;
+  border: 2px solid transparent;
+  transition: 1s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.ctaButa:hover {
+  background: transparent;
+  color: var(--color);
+  border: 2px solid var(--primary-color);
+}
+.ctaButb {
+  padding: 10px 10px;
+  background-color: var(--gost-but);
+  font-size: 16px;
+  border: none;
+  color: var(--color);
+  border: 2px solid transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 1s;
+  text-decoration: none;
+}
+.ctaButb:hover {
+  background: transparent;
+  color: var(--color);
+  border: 2px solid var(--primary-color);
+}
+.heroContainer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.heroNumberBox {
+  position: relative;
+  padding: 1rem;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  transition: 1s;
+  cursor: pointer;
+}
+.heroNumberBox:hover {
+  background-color: var(--primary-color);
+}
+.heroNumberBox:hover .numberBoxpnumber {
+  color: white;
+}
+.heroNumberBox:hover .numberBoxpname {
+  color: white;
+}
+.numberBoxpname {
+  font-size: 1rem;
+}
+.numberBoxpnumber {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  width: max-content;
+}
+.badges {
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  border: 2px solid transparent;
+  transition: 1s;
+  cursor: pointer;
+}
+.badges:hover {
+  border: 2px solid var(--primary-color);
+  background-color: transparent;
+}
+.heroContainerb {
+  position: relative;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aaaa {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.12) 1px, transparent 1px);
+
+  background-size: 40px 40px;
+  -webkit-mask-image: radial-gradient(
+    ellipse at center,
+    black 35%,
+    transparent 86%
+  );
+  mask-image: radial-gradient(ellipse at center, black 70%, transparent 86%);
+}
+.heroProjectBox {
+  position: absolute;
+  padding: 10px 10px;
+  padding-bottom: 10px;
+  width: 350px;
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: 2px solid var(--border);
+  box-shadow: 0px 5px 15px rgba(225, 225, 225, 0.5);
+  border-radius: 14px;
+  background-color: white;
+  transition: 1s;
+}
+.heroProjectBox:hover {
+  border: 2px solid var(--primary-color);
+  box-shadow: 0px 0px 40px var(--primary-color);
+}
+.aheroPro {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.skelationloading {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: whitesmoke;
+}
+.skelationloading::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  width: 100%;
+  background-color: hsl(0, 0%, 93%);
+  box-shadow:
+    0px 0px 15px hsl(0, 0%, 93%),
+    0px 0px 20px hsl(0, 0%, 93%);
+  animation: loadani 2s linear infinite;
+  opacity: 0;
+}
+
+@keyframes loadani {
+  0% {
+    opacity: 0;
+    top: 0;
+  }
+  50% {
+    opacity: 1;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    top: 100%;
+  }
+}
+.heroProjectImg {
+  width: 100%;
+  height: 50%;
+  object-fit: contain;
+  border-radius: 12px;
+  transition: 1s;
+}
+.heroProjectImg:hover {
+  transform: scale(1.1);
+}
+.heroProjectBody {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.heroProjectTitle {
+  font-size: 18px;
+  font-weight: 600;
+}
+.heroProjectminBox {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.heroProjectskillp {
+  padding: 5px;
+  background-color: var(--gost-but);
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 1s;
+  cursor: pointer;
+}
+.heroProjectskillp:hover {
+  color: white;
+  background-color: var(--primary-color);
+}
+.heroProjectlinkBox {
+  position: relative;
+  display: flex;
+  gap: 10px;
+}
+.projectLink {
+  padding: 10px 10px;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid transparent;
+  transition: 1s;
+}
+.projectLink:hover {
+  background: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+.projectLinkb {
+  padding: 10px 10px;
+  background-color: var(--secondary-color);
+  color: black;
+  text-decoration: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid transparent;
+  transition: 1s;
+}
+.projectLinkb:hover {
+  background-color: var(--bg);
+  color: var(--primary-color);
+}
+.aboutSection {
+  position: relative;
+  padding: 1rem;
+  padding-top: 75px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 15px;
+}
+.aboutContainer {
+  position: relative;
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+}
+.aboutleftCard {
+  position: relative;
+  padding: 10px 10px;
+  width: 50%;
+  height: max-content;
+  display: flex;
+  gap: 10px;
+  border: 2px solid var(--border);
+  box-shadow: 0px 5px 15px rgba(225, 225, 225, 0.5);
+  border-radius: 10px;
+  transition: 1s;
+  cursor: pointer;
+}
+.aboutleftCard:hover {
+  background-color: var(--primary-color);
+  color: white;
+  border: 2px solid var(--primary-color);
+  box-shadow: 0px 0px 40px var(--primary-color);
+}
+.aboutleftCard:hover .badges {
+  color: black;
+}
+.aboutImgBox {
+  position: relative;
+  width: 30%;
+  overflow: hidden;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 1s;
+}
+.aboutImgBox:hover {
+  border: 2px solid var(--primary-color);
+}
+.aboutImg {
+  width: 100%;
+  height: max-content;
+  border-radius: 10px;
+  object-fit: contain;
+  transition: 1s;
+}
+.aboutImg:hover {
+  transform: scale(1.1);
+}
+.aboutName {
+  font-size: 1.5rem;
+}
+.aboutlefticop {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.aboutrightCard {
+  position: relative;
+  width: 50%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.aboutleftconworkphiloBOX {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.phiocontainer {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.phioBox {
+  position: relative;
+  padding: 10px 10px;
+  height: 140px;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: 1s;
+}
+.phioBox::after {
+  content: "";
+  position: absolute;
+  bottom: -22px;
+  right: -2px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-top-left-radius: 10px;
+  box-shadow: 0px -20px 0 0 white;
+  pointer-events: none;
+}
+.phib::after {
+  content: "";
+  position: absolute;
+  bottom: -22px;
+  left: 4px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 0px;
+  box-shadow: -6px -20px 0 0 white;
+  pointer-events: none;
+}
+.phic::after {
+  content: "";
+  position: absolute;
+  top: -22px;
+  right: 4px;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 0px;
+  box-shadow: 6px 20px 0 0 white;
+  cursor: pointer;
+}
+.phid::after {
+  content: "";
+  position: absolute;
+  top: -23px;
+  left: -8px;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 0px;
+  box-shadow: 6px 20px 0 0 white;
+  cursor: pointer;
+}
+.phioBox:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+.phiIco {
+  position: absolute;
+  left: 47.2%;
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+  cursor: pointer;
+}
+.phiIco:hover {
+  color: var(--primary-color);
+}
+.phioBoxtitle {
+  font-size: 18px;
+  font-weight: 600;
+}
+.projectSection {
+  position: relative;
+  padding: 1rem;
+  padding-top: 75px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 15px;
+}
+.topprojectContainer {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 10px;
+}
+.topprojectBox {
+  position: relative;
+  padding: 10px 10px;
+  display: flex;
+  gap: 10px;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  transition: 1s;
+}
+.topprojectBox:hover {
+  box-shadow: 0px 0px 40px var(--primary-color);
+}
+.topprojectImgBox {
+  position: relative;
+  width: 50%;
+}
+.topproImg {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  transition: 1s;
+}
+.topprojectImgBox:hover ~ .topprojectImgBoxLink {
+  opacity: 1;
+}
+.topprojectBody {
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.topprojectTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.topprojectminBox {
+  position: relative;
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.topprojectLink {
+  padding: 10px 10px;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.topprojectLinkb {
+  padding: 10px 10px;
+  border-radius: 10px;
+  background-color: var(--gost-but);
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.topprojectImgBoxLink {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: white;
+  opacity: 1;
+  color: black;
+  font-size: 12px;
+  border: 2px solid var(--primary-color);
+  text-decoration: none;
+  white-space: nowrap;
+  z-index: 1;
+}
+.projectContainer {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+}
+.projectBox {
+  position: relative;
+  padding: 10px 10px;
+  padding-bottom: 10px;
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  gap: 15px;
+  border: 2px solid var(--border);
+  box-shadow: 0px 5px 15px rgba(225, 225, 225, 0.5);
+  border-radius: 14px;
+  background-color: white;
+  transition: 1s;
+}
+.projectBox:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-5px);
+}
+.projectBox:hover .heroProjectskillp {
+  color: black;
+}
+.projectBox:hover .projectLink {
+  background-color: var(--secondary-color);
+  color: black;
+}
+.liveProIco {
+  font-size: 20px;
+}
+.jProjectImg {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+  transition: 1s;
+}
+.jProjectImg:hover {
+  transform: scale(1.1);
+}
+.skillSection {
+  position: relative;
+  padding: 1rem;
+  padding-top: 75px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 15px;
+}
+.skillContainer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.skillBox {
+  flex: 1 0 400px;
+  position: relative;
+  padding: 10px 10px;
+  min-height: 150px;
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: 1s;
+}
+.skillBox:hover {
+  border: 2px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: white;
+  animation: dog 2s linear infinite;
+}
+@keyframes dog {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.skillBox:hover .skillboxIco {
+  color: var(--primary-color);
+}
+.skillBox:hover .skillBoxskills {
+  background-color: white;
+  color: black;
+}
+.skillboxIco {
+  padding: 10px 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  background-color: var(--secondary-color);
+}
+.skillboxtitle {
+  font-size: 18px;
+  font-weight: 600;
+}
+.skillminBox {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.skillBoxskills {
+  padding: 10px 10px;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 1s;
+  cursor: pointer;
+}
+.skillBoxskills:hover {
+  transform: translateY(-5px);
+}
+.experienceSection {
+  position: relative;
+  padding: 1rem;
+  padding-top: 75px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 15px;
+}
+.experienceContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.jexperienceBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.experienceBox {
+  position: relative;
+  padding: 10px 10px;
+  width: 70%;
+  border-radius: 10px;
+  border: 2px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 3%;
+  background-color: var(--bg);
+  transition: 1s;
+  cursor: pointer;
+}
+.experienceBox:hover {
+  border: 2px solid var(--primary-color);
+}
+.experienceBox:hover .heroProjectskillp {
+  color: white;
+  background-color: var(--primary-color);
+}
+.experienceCompanyname {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+.experienceboxTitle {
+  font-size: 18px;
+  font-weight: 600;
+}
+.timelineline {
+  position: relative;
+  margin-left: 1%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.jexperienceBox::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 5px;
+  background-color: var(--primary-color);
+}
+.aexperienceBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.experienceBox::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: -4%;
+  height: 3px;
+  width: 3%;
+  background-color: var(--primary-color);
+}
+.experienceYeardot {
+  position: relative;
+  height: 15px;
+  width: 15px;
+  background-color: var(--primary-color);
+  border-radius: 40px;
+}
+.experiencetype {
+  color: #555;
+}
+.contactSection {
+  position: relative;
+  padding: 1rem;
+  padding-top: 75px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 15px;
+}
+.contactDes {
+  width: 60%;
+}
+.contactContainer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+.contactInfo {
+  position: relative;
+  padding: 10px 10px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 2px solid var(--border);
+  border-radius: 10px;
+}
+.contactLink {
+  padding: 5px;
+  width: max-content;
+  border-bottom: 2px solid var(--primary-color);
+  color: var(--color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 1s;
+  white-space: nowrap;
+}
+.contactLink:hover {
+  color: var(--primary-color);
+}
+.contactIco {
+  font-size: 20px;
+}
+.aresume {
+  text-decoration: none;
+  width: max-content;
+}
+.contactBox {
+  position: relative;
+  padding: 10px 10px;
+  width: 50%;
+  box-shadow: 0px 0px 15px rgba(225, 225, 225, 0.5);
+  border-radius: 10px;
+}
+.contactForm {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.formGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.contactformInput {
+  padding: 10px 10px;
+  font-size: 16px;
+  border: 2px solid var(--border);
+  outline: none;
+  border-radius: 10px;
+  font-weight: 300;
+  transition: 1s;
+}
+.contactformInput:hover {
+  border-color: var(--primary-color);
+}
+.contactformInput:focus {
+  color: var(--primary-color);
+}
+.contactformTextarea {
+  padding: 10px 10px;
+  font-size: 16px;
+  border: 2px solid var(--border);
+  outline: none;
+  border-radius: 10px;
+  resize: none;
+  height: 100px;
+  transition: 1s;
+}
+.contactformTextarea:hover {
+  border-color: var(--primary-color);
+}
+.contactformTextarea:focus {
+  color: var(--primary-color);
+}
+.sendMessageButton {
+  padding: 10px 10px;
+  background-color: var(--primary-color);
+  font-size: 16px;
+  border: none;
+  color: white;
+  border: 2px solid transparent;
+  transition: 1s;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.contactminBoc {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+.navButton {
+  display: none;
+}
+.showmoreprojBut {
+  position: relative;
+  padding: 10px 10px;
+  left: 43%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 2px solid var(--primary-color);
+  background: var(--primary-color);
+  color: white;
+  transition: 1s;
+  cursor: pointer;
+}
+.showmoreprojBut:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+@media (max-width: 1250px) {
+  .heroSection {
+    padding-top: 80px;
+  }
+  .topprojectContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .experienceBox {
+    width: 90%;
+  }
+  .experienceBox::after {
+    left: -3%;
+  }
+}
+@media (max-width: 1194px) {
+  .aboutContainer {
+    flex-direction: column;
+  }
+  .aboutleftCard {
+    width: 100%;
+  }
+  .aboutrightCard {
+    width: 74%;
+  }
+}
+@media (max-width: 965px) {
+  .heroSection {
+    flex-direction: column;
+  }
+  .heroContainera {
+    width: 100%;
+  }
+  .heroContainerb {
+    height: 100vh;
+    width: 100%;
+  }
+  .navBox {
+    width: max-content;
+  }
+}
+
+@media (max-width: 851px) {
+  .timelineline {
+    margin-left: 3%;
+  }
+}
+
+@media (max-width: 836px) {
+  .navButton {
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+  }
+  .navBox {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    padding: 1rem;
+    flex-direction: column;
+    height: calc(100vh - 50px);
+    width: 100%;
+    z-index: 1;
+    background: white;
+  }
+  nav {
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .navp {
+    padding: 0px;
+  }
+  .aboutrightCard {
+    width: 100%;
+  }
+}
+
+@media (max-width: 803px) {
+  .contactDes {
+    width: 100%;
+  }
+}
+@media (max-width: 721px) {
+  .topprojectBox {
+    flex-direction: column;
+  }
+  .topprojectBody {
+    width: 100%;
+  }
+}
+@media (max-width: 679px) {
+  .phiIco {
+    display: none;
+  }
+  .phioBox {
+    height: 100%;
+  }
+  .phioBox::after {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .contactContainer {
+    flex-direction: column;
+  }
+  .contactInfo {
+    width: 100%;
+  }
+  .contactBox {
+    width: 100%;
+  }
+  .aboutImgBox {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .aaaa {
+    mask-image: radial-gradient(ellipse at center, black 87%, transparent 160%);
+  }
+}
+
+@media (max-width: 570px) {
+  .heroDescription {
+    width: 100%;
+  }
+  .aboutleftCard {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 495px) {
+  .headerName {
+    font-size: 1.5rem;
+  }
+  .topprojectImgBox {
+    width: 100%;
+  }
+}
+
+@media (max-width: 442px) {
+  .heroNumberBox {
+    width: 180px;
+  }
+  .skillBox {
+    flex: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .heroNumberBox {
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .aboutImgBox {
+    width: 100%;
+  }
+}
+
+@media (max-width: 370px) {
+  .headerName {
+    font-size: 1.2rem;
+  }
+}

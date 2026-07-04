@@ -101,7 +101,7 @@ header {
   white-space: nowrap;
 }
 .resumeBut {
-  background-color: slateblue;
+  background-color: var(--primary-color);
   color: white;
   border-radius: 20px;
   text-decoration: none;
@@ -163,7 +163,7 @@ header {
 .ctaBut {
   padding: 10px 10px;
   border-radius: 20px;
-  background-color: slateblue;
+  background-color: var(--primary-color);
   box-shadow: 0px 6px 15px rgba(225, 225, 225, 0.6);
   backdrop-filter: blur(15px);
   cursor: pointer;
@@ -298,7 +298,7 @@ header {
 }
 .skillPl:hover {
   transform: scaleX(1);
-  background-color: slateblue;
+  background-color: var(--primary-color);
   color: white;
 }
 .projectContainer {
@@ -374,12 +374,12 @@ header {
 }
 .projectSkilluse:hover {
   transform: scaleX(1);
-  background-color: slateblue;
+  background-color: var(--primary-color);
   color: white;
 }
 .projectBut {
   padding: 10px 10px;
-  background-color: slateblue;
+  background-color: var(--primary-color);
   color: white;
   font-size: 16px;
   font-weight: 600;
@@ -443,7 +443,7 @@ header {
 }
 .projectButx {
   padding: 10px 10px;
-  background-color: slateblue;
+  background-color: var(--primary-color);
   color: white;
   font-size: 16px;
   font-weight: 600;
@@ -506,7 +506,7 @@ header {
   max-width: 100%;
 }
 .contactusLink:hover {
-  background-color: slateblue;
+  background-color: var(--primary-color);
   color: white;
 }
 .ftContainer {
@@ -544,7 +544,7 @@ header {
   color: black;
 }
 mark {
-  background-color: slateblue;
+  background-color: var(--primary-color);
   color: white;
 }
 .redesignContainer {

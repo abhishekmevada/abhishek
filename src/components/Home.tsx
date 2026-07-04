@@ -22,7 +22,6 @@ import resumePdf from "/resumeb.pdf";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa6";
 import type { ChangeEvent, FormEvent } from "react";
-import Tspartical from "./Tspartical";
 // import { Hands } from "@mediapipe/hands";
 // import { Camera } from "@mediapipe/camera_utils";
 
@@ -196,7 +195,7 @@ export default function Home() {
 
   const projects = [
     {
-      id: 2,
+      id: 1,
       name: "Hospital Appointment System",
       image: hospitalappok,
       description:
@@ -471,7 +470,6 @@ export default function Home() {
               animate={isPageLoaded ? "visible" : "hidden"}
               initial="hidden"
             >
-              <Tspartical />
               <div className="typeBox">
                 <motion.p className="hiab" variants={itemVariants}>
                   Hi, I'm Abhishek{" "}
