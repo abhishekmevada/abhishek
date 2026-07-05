@@ -20,6 +20,7 @@ import inventry_management from "/inventry_management.png";
 import hospitalappok from "/hospitalappo.png";
 import projectmanagement from "/projectmanagement.png";
 import ecommerce58 from "/ecommerce58.png";
+import aboutImg from "/myimg.jpg";
 import {
   CodeXml,
   Server,
@@ -70,7 +71,7 @@ export default function Homev() {
   ]);
   const [showNav, setShowNav] = useState(false);
   const [showproj, setShowproj] = useState(true);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [contactform, setContactform] = useState({
     name: "",
     email: "",
@@ -114,7 +115,14 @@ export default function Homev() {
       setShowNav(true);
     }
 
+    const img = new Image();
+
+    img.onload = () => {
+      setLoading(true);
+    };
+
     return () => {
+      img.onload = null;
       clearInterval(interval);
     };
   }, []);
@@ -701,14 +709,16 @@ export default function Homev() {
           <div className="aboutContainer">
             <div className="aboutleftCard">
               <div className="aboutImgBox">
-                {loading && <div className="skelationloading"></div>}
-                <img
-                  onLoad={() => setLoading(false)}
-                  onError={() => setLoading(true)}
-                  src="./myimg.jpg"
-                  alt="Abhishek Mevada"
-                  className="aboutImg"
-                />
+                {!loading && <div className="skelationloading"></div>}
+                {loading && (
+                  <img
+                    onLoad={() => setLoading(false)}
+                    onError={() => setLoading(true)}
+                    src={aboutImg}
+                    alt="Abhishek Mevada"
+                    className="aboutImg"
+                  />
+                )}
               </div>
 
               <div
