@@ -2,9 +2,9 @@
   --bg: white;
   --color: #000;
   --primary-color: #338bff;
-  --secondary-color: hsl(214, 100%, 95%);
+  --secondary-color: hsl(212, 100%, 95%);
   --gost-but: #e6e6e6;
-  --cta-but: #ff8000;
+  --cta-but: hsla(30, 100%, 50%, 0.316);
   --border: #ccc;
 }
 

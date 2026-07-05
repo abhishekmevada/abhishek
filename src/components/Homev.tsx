@@ -13,9 +13,9 @@ import ecommerce from "/ecommerce.png";
 import passwordmanager from "/passwordmanager.png";
 import taskmanager from "/taskmanager.png";
 import blog from "/blog.png";
-// import connectcables from "/connectcables.png";
-// import ratanindustries from "/ratanindustries.png";
-// import yashrajcab from "/yashrajcab.png";
+import connectcables from "/connectcables.png";
+import ratanindustries from "/ratanindustries.png";
+import yashrajcab from "/yashrajcab.png";
 import inventry_management from "/inventry_management.png";
 import hospitalappok from "/hospitalappo.png";
 import projectmanagement from "/projectmanagement.png";
@@ -130,7 +130,42 @@ export default function Homev() {
   const top_project = [
     {
       id: 1,
+      name: "Ratan Industries",
+      type: "CLIENT PROJECT",
+      typeid: 1,
+      image: ratanindustries,
+      description:
+        "Designed and developed a React website for a chemical manufacturing business. Built product catalog sections, industry solutions, quality and compliance information, and contact functionality within a professional responsive interface.",
+      skills: ["React", "CSS", "TypeScript", "EmailJS"],
+      link: "https://ratanindustries.netlify.app/",
+    },
+    {
+      id: 2,
+      name: "Yash Raj Cab Services",
+      type: "CLIENT PROJECT",
+      typeid: 1,
+      image: yashrajcab,
+      description:
+        "Built a responsive React website for a taxi service business. Created clear service pages for local, airport, and outstation bookings, along with mobile-friendly navigation and WhatsApp contact integration.",
+      skills: ["React", "CSS", "TypeScript", "WhatsApp Integration"],
+      link: "https://yashrajcabservices.netlify.app/",
+    },
+    {
+      id: 3,
+      name: "Connect Cables",
+      type: "CLIENT PROJECT",
+      typeid: 1,
+      image: connectcables,
+      description:
+        "Developed a responsive website for a cable business using HTML, CSS, and JavaScript. Structured the site around company information, products and services, and customer contact details.",
+      skills: ["HTML", "CSS", "JavaScript", "EmailJS"],
+      link: "https://connectcables.co.in/",
+    },
+    {
+      id: 4,
       name: "Project Management System",
+      type: "INTERNSHIP PROJECT",
+      typeid: 4,
       image: projectmanagement,
       description:
         "A full-stack project management platform that helps teams plan projects, assign tasks, monitor progress, and collaborate through secure role-based dashboards, real-time project tracking, and automated completion analytics.",
@@ -148,8 +183,10 @@ export default function Homev() {
       github: null,
     },
     {
-      id: 2,
+      id: 5,
       name: "E-Commerce Platform",
+      type: "INTERNSHIP PROJECT",
+      typeid: 4,
       image: ecommerce58,
       description:
         "A full-stack e-commerce platform that enables users to browse products, manage shopping carts, place orders, and securely authenticate accounts through a responsive interface powered by RESTful APIs and scalable backend services.",
@@ -159,8 +196,10 @@ export default function Homev() {
       github: null,
     },
     {
-      id: 3,
+      id: 6,
       name: "Hospital Appointment System",
+      type: "FULL-STACK PROJECT",
+      typeid: 2,
       image: hospitalappok,
       description:
         "A full-stack hospital management platform that enables patients to book appointments, doctors to manage consultation schedules, and administrators to oversee healthcare operations through secure role-based access and an intuitive dashboard.",
@@ -172,8 +211,10 @@ export default function Homev() {
     },
 
     {
-      id: 4,
+      id: 7,
       name: "Inventory Management System",
+      type: "FULL-STACK PROJECT",
+      typeid: 2,
       image: inventry_management,
       description:
         "An AI-powered inventory management system that predicts future product demand using machine learning, helping businesses prevent stock shortages through analytics, automated alerts, and real-time inventory tracking.",
@@ -196,6 +237,8 @@ export default function Homev() {
     {
       id: 1,
       name: "Heart Disease Detector",
+      type: "AI/ML PROJECT",
+      typeid: 3,
       image: heartdiseasedetection,
       description:
         "A machine learning web application that predicts the likelihood of heart disease using clinical data, providing healthcare professionals and users with quick risk assessments through a simple and responsive interface.",
@@ -206,6 +249,8 @@ export default function Homev() {
     {
       id: 2,
       name: "EduLens – Student Result Predictor",
+      type: "AI/ML PROJECT",
+      typeid: 3,
       image: studentpredication,
       description:
         "An educational analytics platform that predicts student academic performance using machine learning, helping educators and students make informed decisions through data-driven performance insights.",
@@ -216,6 +261,8 @@ export default function Homev() {
     {
       id: 3,
       name: "E-Commerce Platform",
+      type: "PERSONAL PROJECT",
+      typeid: 5,
       image: ecommerce,
       description:
         "A full-stack e-commerce platform featuring secure authentication, product and vendor management, shopping cart, order processing, group buying, and automated email notifications for a complete online shopping experience.",
@@ -226,6 +273,8 @@ export default function Homev() {
     {
       id: 4,
       name: "Password Manager",
+      type: "PERSONAL PROJECT",
+      typeid: 5,
       image: passwordmanager,
       description:
         "A secure password management application that stores user credentials safely and requires an additional identity verification step before revealing sensitive information for enhanced account protection.",
@@ -236,6 +285,8 @@ export default function Homev() {
     {
       id: 5,
       name: "Task Manager",
+      type: "PERSONAL PROJECT",
+      typeid: 5,
       image: taskmanager,
       description:
         "A productivity-focused task management application that helps users organize daily work, track deadlines, and receive timely reminders through a clean, secure, and user-friendly interface.",
@@ -246,6 +297,8 @@ export default function Homev() {
     {
       id: 6,
       name: "Blog Platform",
+      type: "PERSONAL PROJECT",
+      typeid: 5,
       image: blog,
       description:
         "A modern blogging platform designed for publishing and managing articles with a clean reading experience, responsive design, and intuitive content organization focused on accessibility and usability.",
@@ -347,55 +400,55 @@ export default function Homev() {
             "REST APIs",
           ],
         },
-        {
-          id: 2,
-          year: "2026",
+        // {
+        //   id: 2,
+        //   year: "2026",
 
-          type: "Freelance",
-          company: "Yash Raj Cab Services",
-          role: "React Developer",
-          title: "Cab Service Business Website",
-          description:
-            "Developed a responsive React website for a cab service business to present its services, booking contact details, and business information. Focused on clear service sections, mobile-friendly navigation, and a professional customer-facing layout.",
-          skills: ["React.js", "JavaScript", "CSS", "Responsive Design"],
-        },
+        //   type: "Freelance",
+        //   company: "Yash Raj Cab Services",
+        //   role: "React Developer",
+        //   title: "Cab Service Business Website",
+        //   description:
+        //     "Developed a responsive React website for a cab service business to present its services, booking contact details, and business information. Focused on clear service sections, mobile-friendly navigation, and a professional customer-facing layout.",
+        //   skills: ["React.js", "JavaScript", "CSS", "Responsive Design"],
+        // },
       ],
     },
 
-    {
-      id: 3,
-      year: "2025",
-      exp: [
-        {
-          id: 3,
-          year: "2025",
-          type: "Freelance",
-          company: "Ratan Industries",
-          role: "React Developer",
-          title: "Industrial Business Website",
-          description:
-            "Developed a React-based business website for an industrial company. Created structured pages to communicate the company profile, services, and contact information with a responsive layout for desktop and mobile users.",
-          skills: ["React.js", "JavaScript", "CSS", "Responsive Design"],
-        },
-      ],
-    },
-    {
-      id: 4,
-      year: "2024",
-      exp: [
-        {
-          id: 4,
-          year: "2024",
-          type: "Freelance",
-          company: "Connect Cables",
-          role: "Frontend Developer",
-          title: "Cable Company Landing Page",
-          description:
-            "Developed a business landing page for a cable company using HTML, CSS, and JavaScript. Designed clear content sections for company information, products or services, and customer contact details while maintaining responsive behavior across devices.",
-          skills: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
-        },
-      ],
-    },
+    // {
+    //   id: 3,
+    //   year: "2025",
+    //   exp: [
+    //     {
+    //       id: 3,
+    //       year: "2025",
+    //       type: "Freelance",
+    //       company: "Ratan Industries",
+    //       role: "React Developer",
+    //       title: "Industrial Business Website",
+    //       description:
+    //         "Developed a React-based business website for an industrial company. Created structured pages to communicate the company profile, services, and contact information with a responsive layout for desktop and mobile users.",
+    //       skills: ["React.js", "JavaScript", "CSS", "Responsive Design"],
+    //     },
+    //   ],
+    // },
+    // {
+    //   id: 4,
+    //   year: "2024",
+    //   exp: [
+    //     {
+    //       id: 4,
+    //       year: "2024",
+    //       type: "Freelance",
+    //       company: "Connect Cables",
+    //       role: "Frontend Developer",
+    //       title: "Cable Company Landing Page",
+    //       description:
+    //         "Developed a business landing page for a cable company using HTML, CSS, and JavaScript. Designed clear content sections for company information, products or services, and customer contact details while maintaining responsive behavior across devices.",
+    //       skills: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
+    //     },
+    //   ],
+    // },
   ];
 
   const openres = () => {
@@ -861,7 +914,51 @@ export default function Homev() {
                   </a> */}
                 </div>
                 <div className="topprojectBody">
-                  <p className="topprojectTitle">{pro.name}</p>
+                  <div className="jjtopprojectbadgeBox">
+                    <p className="topprojectTitle">{pro.name}</p>
+                    <p
+                      className="topperprojectBadge"
+                      style={{
+                        background:
+                          pro.typeid === 1
+                            ? "var(--secondary-color)" // CLIENT PROJECT
+                            : pro.typeid === 2
+                              ? "var(--cta-but)" // FULL-STACK PROJECT
+                              : pro.typeid === 3
+                                ? "#FFF7ED" // FULL-STACK + AI/ML
+                                : pro.typeid === 4
+                                  ? "#ECFDF5" // INTERNSHIP PROJECT
+                                  : pro.typeid === 5
+                                    ? "#F8FAFC" // PERSONAL PROJECT
+                                    : "#F8FAFC",
+
+                        color:
+                          pro.typeid === 1
+                            ? "#2563EB"
+                            : pro.typeid === 2
+                              ? "#15803D"
+                              : pro.typeid === 3
+                                ? "#C2410C"
+                                : pro.typeid === 4
+                                  ? "#0F766E"
+                                  : "#475569",
+
+                        border:
+                          pro.typeid === 1
+                            ? "1px solid #BFDBFE"
+                            : pro.typeid === 2
+                              ? "1px solid #BBF7D0"
+                              : pro.typeid === 3
+                                ? "1px solid #FED7AA"
+                                : pro.typeid === 4
+                                  ? "1px solid #99F6E4"
+                                  : "1px solid #CBD5E1",
+                      }}
+                    >
+                      {pro.type}
+                    </p>
+                  </div>
+
                   <p className="topprojectDes">{pro.description}</p>
                   <div className="heroProjectminBox">
                     {pro.skills.map((hpskil, index) => (
@@ -871,7 +968,7 @@ export default function Homev() {
                     ))}
                   </div>
                   <div className="topprojectminBox">
-                    {pro.id === 3 ? (
+                    {pro.id === 4 ? (
                       <>
                         <a
                           href={pro.link}
@@ -897,13 +994,16 @@ export default function Homev() {
                         <BiWorld className="liveProIco" /> Live Website
                       </a>
                     )}
-                    <a
-                      href={pro?.github ?? pro?.gitlab}
-                      target="_-blank"
-                      className="projectLinkb"
-                    >
-                      <FaGitlab /> Git Hub
-                    </a>
+                    {pro.typeid === 1 ? null : (
+                      <a
+                        href={pro?.github ?? pro?.gitlab}
+                        target="_-blank"
+                        className="projectLinkb"
+                        style={{ cursor: "pointer" }}
+                      >
+                        <FaGitlab /> Git Hub
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
@@ -942,7 +1042,50 @@ export default function Homev() {
                 </div>
 
                 <div className="heroProjectBody">
-                  <p className="heroProjectTitle">{pro.name}</p>
+                  <div className="jjtopprojectbadgeBox">
+                    <p className="heroProjectTitle">{pro.name}</p>
+                    <p
+                      className="topperprojectBadge"
+                      style={{
+                        background:
+                          pro.typeid === 1
+                            ? "var(--secondary-color)" // CLIENT PROJECT
+                            : pro.typeid === 2
+                              ? "var(--cta-but)" // FULL-STACK PROJECT
+                              : pro.typeid === 3
+                                ? "#FFF7ED" // FULL-STACK + AI/ML
+                                : pro.typeid === 4
+                                  ? "#ECFDF5" // INTERNSHIP PROJECT
+                                  : pro.typeid === 5
+                                    ? "#F8FAFC" // PERSONAL PROJECT
+                                    : "#F8FAFC",
+
+                        color:
+                          pro.typeid === 1
+                            ? "#2563EB"
+                            : pro.typeid === 2
+                              ? "#15803D"
+                              : pro.typeid === 3
+                                ? "#C2410C"
+                                : pro.typeid === 4
+                                  ? "#0F766E"
+                                  : "#475569",
+
+                        border:
+                          pro.typeid === 1
+                            ? "1px solid #BFDBFE"
+                            : pro.typeid === 2
+                              ? "1px solid #BBF7D0"
+                              : pro.typeid === 3
+                                ? "1px solid #FED7AA"
+                                : pro.typeid === 4
+                                  ? "1px solid #99F6E4"
+                                  : "1px solid #CBD5E1",
+                      }}
+                    >
+                      {pro.type}
+                    </p>
+                  </div>
                   <p>{pro.description}</p>
                   <div className="heroProjectminBox">
                     {pro.skills.map((hpskil, index) => (

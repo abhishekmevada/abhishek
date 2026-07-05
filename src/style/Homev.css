@@ -629,6 +629,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 5px;
+  cursor: pointer;
 }
 .topprojectImgBoxLink {
   position: absolute;
@@ -1010,6 +1011,19 @@ nav {
 .showmoreprojBut:hover {
   background-color: transparent;
   color: var(--primary-color);
+}
+.jjtopprojectbadgeBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.topperprojectBadge {
+  padding: 5px;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  font-size: 14px;
 }
 @media (max-width: 1250px) {
   .heroSection {
