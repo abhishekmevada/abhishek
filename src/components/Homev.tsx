@@ -127,6 +127,14 @@ export default function Homev() {
     };
   }, []);
 
+  const jfun = () => {
+    if (window.innerWidth > 863) {
+      setShowNav(true);
+      return;
+    }
+    setShowNav(false);
+  };
+
   const top_project = [
     {
       id: 1,
@@ -469,7 +477,7 @@ export default function Homev() {
             <nav>
               <motion.a
                 href="#about"
-                onClick={() => setShowNav(false)}
+                onClick={jfun}
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.1 }}
@@ -479,7 +487,7 @@ export default function Homev() {
               </motion.a>
               <motion.a
                 href="#projects"
-                onClick={() => setShowNav(false)}
+                onClick={jfun}
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.1, delay: 0.5 }}
@@ -489,7 +497,7 @@ export default function Homev() {
               </motion.a>
               <motion.a
                 href="#skills"
-                onClick={() => setShowNav(false)}
+                onClick={jfun}
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.1, delay: 1 }}
@@ -499,7 +507,7 @@ export default function Homev() {
               </motion.a>
               <motion.a
                 href="#experience"
-                onClick={() => setShowNav(false)}
+                onClick={jfun}
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.1, delay: 1.5 }}
@@ -509,7 +517,7 @@ export default function Homev() {
               </motion.a>
               <motion.a
                 href="#contact"
-                onClick={() => setShowNav(false)}
+                onClick={jfun}
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.1, delay: 2 }}
@@ -593,14 +601,15 @@ export default function Homev() {
               </motion.p>
             </div>
             <div className="heroBox">
-              <motion.button
+              <motion.a
+                href="#projects"
                 initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.3, delay: 5.5 }}
                 className="ctaButa"
               >
                 View Project
-              </motion.button>
+              </motion.a>
               <motion.a
                 href="Abhishek_Mevada.pdf"
                 initial={{ opacity: 0, x: 10 }}

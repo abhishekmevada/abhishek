@@ -140,6 +140,7 @@ nav {
   transition: 1s;
   border-radius: 5px;
   cursor: pointer;
+  text-decoration: none;
 }
 .ctaButa:hover {
   background: transparent;
