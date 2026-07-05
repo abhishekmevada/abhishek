@@ -469,6 +469,7 @@ export default function Homev() {
             <nav>
               <motion.a
                 href="#about"
+                onClick={() => setShowNav(false)}
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.1 }}
@@ -478,6 +479,7 @@ export default function Homev() {
               </motion.a>
               <motion.a
                 href="#projects"
+                onClick={() => setShowNav(false)}
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.1, delay: 0.5 }}
@@ -487,6 +489,7 @@ export default function Homev() {
               </motion.a>
               <motion.a
                 href="#skills"
+                onClick={() => setShowNav(false)}
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.1, delay: 1 }}
@@ -496,6 +499,7 @@ export default function Homev() {
               </motion.a>
               <motion.a
                 href="#experience"
+                onClick={() => setShowNav(false)}
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.1, delay: 1.5 }}
@@ -505,6 +509,7 @@ export default function Homev() {
               </motion.a>
               <motion.a
                 href="#contact"
+                onClick={() => setShowNav(false)}
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.1, delay: 2 }}
