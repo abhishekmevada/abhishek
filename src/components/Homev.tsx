@@ -841,14 +841,16 @@ export default function Homev() {
             {top_project.map((pro) => (
               <div key={pro.id} className="topprojectBox">
                 <div className="topprojectImgBox">
-                  {loading && <div className="skelationloading"></div>}
-                  <img
-                    onLoad={() => setLoading(false)}
-                    onError={() => setLoading(true)}
-                    src={pro.image}
-                    alt={pro.name}
-                    className="topproImg"
-                  />
+                  {!loading && <div className="skelationloading"></div>}
+                  {loading && (
+                    <img
+                      onLoad={() => setLoading(false)}
+                      onError={() => setLoading(true)}
+                      src={pro.image}
+                      alt={pro.name}
+                      className="topproImg"
+                    />
+                  )}
                   {/* <a
                     href={pro.link}
                     className="topprojectImgBoxLink"
@@ -930,14 +932,16 @@ export default function Homev() {
             {projects.map((pro) => (
               <div key={pro.id} className="projectBox">
                 <div className="aheroPro">
-                  {loading && <div className="skelationloading"></div>}
-                  <img
-                    onLoad={() => setLoading(false)}
-                    onError={() => setLoading(true)}
-                    src={pro.image}
-                    className="jProjectImg"
-                    alt={pro.name}
-                  />
+                  {!loading && <div className="skelationloading"></div>}
+                  {loading && (
+                    <img
+                      onLoad={() => setLoading(false)}
+                      onError={() => setLoading(true)}
+                      src={pro.image}
+                      className="jProjectImg"
+                      alt={pro.name}
+                    />
+                  )}
                 </div>
 
                 <div className="heroProjectBody">
