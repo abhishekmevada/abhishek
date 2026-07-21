@@ -982,7 +982,7 @@ export default function Homev() {
                     ))}
                   </div>
                   <div className="topprojectminBox">
-                    {pro.id === 4 ? (
+                    {pro.id === 6 ? (
                       <>
                         <a
                           href={pro.link}

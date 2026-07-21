@@ -148,6 +148,7 @@ nav {
   border: 2px solid var(--primary-color);
 }
 .ctaButb {
+  position: relative;
   padding: 10px 10px;
   background-color: var(--gost-but);
   font-size: 16px;
